@@ -8,6 +8,7 @@ import Mobile from "../Pages/Site/Mobile/Mobile";
 import Console from "../Pages/Site/Console/Console";
 import Support from "../Pages/Site/Support/Support";
 import Cart from "../Pages/Site/Cart/Cart";
+import Error from "../Pages/Error/Error";
 
 export const Routes=[{
     path:"/",
@@ -49,4 +50,8 @@ export const Routes=[{
         path: "",
         element: <Dashboard />
     }]
+},
+{
+    path:"*",
+    element:<Error/>
 }]

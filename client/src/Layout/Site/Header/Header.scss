@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-bottom: 2px solid #44d62c;
+
+  &__li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    gap: 80px;
+    padding: 10px 0;
+
+    &--logo {
+      width: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &--item {
+      list-style: none;
+      color: #888888;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--item a {
+      text-decoration: none;
+      color: #888888;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

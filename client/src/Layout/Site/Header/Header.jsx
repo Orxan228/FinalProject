@@ -1,10 +1,23 @@
 import React from 'react'
-
+import { Link } from "react-router-dom"
+import {AiOutlineShoppingCart} from "react-icons/ai"
+import {AiOutlineSearch} from "react-icons/ai"
+import "./Header.scss"
 const Header = () => {
   return (
-    <div>
-      SiteHeader
-    </div>
+    <>
+      <div className="header">
+        <ul className='header__li'>
+          <li className='header__li--item header__li--logo'><Link to="/"><img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" alt="" /></Link></li>
+          <li className='header__li--item'><Link to="/store">Store</Link></li>
+          <li className='header__li--item'><Link to="/pc">Pc</Link></li>
+          <li className='header__li--item'><Link to="/console">Console</Link></li>
+          <li className='header__li--item'><Link to="/mobile">Mobile</Link></li>
+          <li className='header__li--item header__li--logo'><AiOutlineSearch/></li>
+          <li className='header__li--item header__li--logo'><Link to="/cart"><AiOutlineShoppingCart/></Link></li>
+        </ul>
+      </div>
+    </>
   )
 }
 
