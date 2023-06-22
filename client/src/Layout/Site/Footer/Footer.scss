@@ -9,4 +9,13 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    &__topLeft{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__shopList{
+        
+    }
 }

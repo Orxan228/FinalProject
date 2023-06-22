@@ -13,8 +13,8 @@ const Header = () => {
           <li className='header__li--item'><Link to="/pc">Pc</Link></li>
           <li className='header__li--item'><Link to="/console">Console</Link></li>
           <li className='header__li--item'><Link to="/mobile">Mobile</Link></li>
-          <li className='header__li--item header__li--logo'><AiOutlineSearch/></li>
-          <li className='header__li--item header__li--logo'><Link to="/cart"><AiOutlineShoppingCart/></Link></li>
+          <li className='header__li--item'><AiOutlineSearch className='header__li--icon'/></li>
+          <li className='header__li--item'><Link to="/cart"><AiOutlineShoppingCart className='header__li--icon'/></Link></li>
         </ul>
       </div>
     </>
