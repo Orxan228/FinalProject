@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: black;
-  border-bottom: 2px solid #44d62c;
+  border-bottom: 2px solid #66B933;
 
   &__li {
     display: flex;
@@ -28,18 +28,27 @@
       img {
         width: 100%;
         object-fit: cover;
+        transition: ease-out 0.3s;
+        filter: drop-shadow(0px 0px 5px rgb(102,185,51));
       }
     }
 
     &--item {
       list-style: none;
+      transition: ease-out 0.3s;
       color: #888888;
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+
+      &:hover{
+        color: #66B933;
+        filter:drop-shadow(rgba(102,185,51,1) 0px 0px 5px);
+      }
     }
 
-    &--icon{
+    &--icon {
       font-size: 25px;
     }
 
@@ -49,6 +58,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all 0.3s;
+
+      &:hover{
+        color: #66B933;
+        text-shadow: rgba(102,185,51,1) 0px 0px 20px;
+      }
     }
   }
 }
