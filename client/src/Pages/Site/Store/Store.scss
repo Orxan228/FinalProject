@@ -1,0 +1,103 @@
+.store {
+    width: 100%;
+    background-color: #000;
+
+    &__filter {
+        width: 100%;
+        padding: 100px 350px 50px 350px;
+
+        &Carousel {
+
+            background-color: #2b2b2b;
+            padding: 10px;
+            border: 1px solid #686868;
+
+            &--box {
+                width: 120px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+                &:hover .store__filterCarousel--boxTop>img {
+                    transform: scale(1.1);
+                    filter: drop-shadow(0px 0px 6px rgba(102, 185, 51, 0.8)) drop-shadow(0px 0px 8px rgba(102, 185, 51, 0.6)) drop-shadow(0px 0px 10px rgba(102, 185, 51, 0.4));
+                }
+            }
+
+            &--boxTop {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    transition: all ease-in-out 0.2s;
+                    max-width: 70%;
+                    max-height: 70%;
+                    object-fit: contain;
+                }
+            }
+
+            &--boxBottom {
+                color: white;
+                font-size: 0.875rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    &__freshHero
+    {
+        width: 100%;
+        padding: 20px 350px;
+        color: white;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-top{
+
+            p:first-child{
+                color: #66b933;
+                font-size: 2.25rem;
+                font-weight: 700;
+                line-height: 30px;
+            }
+            p:last-child{
+                color: gray;
+                font-size: 1.1rem;
+            }
+        }
+
+        &-bottom{
+
+            p:first-child{
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 25px;
+            }
+            p:last-child{
+                color: gray;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+.slick-slide div {
+    margin: 0 auto;
+}
+.slick-prev::before{
+    color: rgb(102, 185, 51) !important;
+}
+.slick-next::before{
+    color: rgb(102, 185, 51) !important;
+}
+
