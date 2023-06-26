@@ -1,103 +1,219 @@
 .store {
+  width: 100%;
+  background-color: #000;
+
+  &__filter {
     width: 100%;
-    background-color: #000;
+    padding: 100px 350px 50px 350px;
 
-    &__filter {
-        width: 100%;
-        padding: 100px 350px 50px 350px;
+    &Carousel {
+      background-color: #2b2b2b;
+      padding: 10px;
+      border: 1px solid #686868;
 
-        &Carousel {
+      &--box {
+        width: 120px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
 
-            background-color: #2b2b2b;
-            padding: 10px;
-            border: 1px solid #686868;
-
-            &--box {
-                width: 120px !important;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-
-                &:hover .store__filterCarousel--boxTop>img {
-                    transform: scale(1.1);
-                    filter: drop-shadow(0px 0px 6px rgba(102, 185, 51, 0.8)) drop-shadow(0px 0px 8px rgba(102, 185, 51, 0.6)) drop-shadow(0px 0px 10px rgba(102, 185, 51, 0.4));
-                }
-            }
-
-            &--boxTop {
-                width: 100%;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                img {
-                    transition: all ease-in-out 0.2s;
-                    max-width: 70%;
-                    max-height: 70%;
-                    object-fit: contain;
-                }
-            }
-
-            &--boxBottom {
-                color: white;
-                font-size: 0.875rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
+        &:hover .store__filterCarousel--boxTop > img {
+          transform: scale(1.1);
+          filter: drop-shadow(0px 0px 6px rgba(102, 185, 51, 0.8))
+            drop-shadow(0px 0px 8px rgba(102, 185, 51, 0.6))
+            drop-shadow(0px 0px 10px rgba(102, 185, 51, 0.4));
         }
+      }
+
+      &--boxTop {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          transition: all ease-in-out 0.2s;
+          max-width: 70%;
+          max-height: 70%;
+          object-fit: contain;
+        }
+      }
+
+      &--boxBottom {
+        color: white;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &__freshHero {
+    width: 100%;
+    padding: 20px 350px;
+    color: white;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-top {
+      p:first-child {
+        color: #66b933;
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      p:last-child {
+        color: gray;
+        font-size: 1.1rem;
+      }
     }
 
-    &__freshHero
-    {
-        width: 100%;
-        padding: 20px 350px;
+    &-bottom {
+      p:first-child {
         color: white;
-        min-height: 200px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 25px;
+      }
+      p:last-child {
+        color: gray;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__fresh {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 350px 20px 350px;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    &__card {
+      width: 22%;
+      background-color: #222;
+      color: white;
+      transition: all ease-in-out 0.3s;
+      overflow: hidden;
+      border-radius: 5px;
+
+      &:hover {
+        box-shadow: 0px 0px 9px 7px rgba(102, 185, 51, 0.52);
+        -webkit-box-shadow: 0px 0px 9px 7px rgba(102, 185, 51, 0.52);
+        -moz-box-shadow: 0px 0px 9px 7px rgba(102, 185, 51, 0.52);
+      }
+      &:hover &--top>img{
+        transform: scale(1.1);
+      }
+      &:hover &--bottom p{
+        color: #66b933;
+        font-weight: 500;
+      }
+
+      &--top {
+        background-color: #111;
+
+        & img {
+          object-fit: cover;
+          width: 100%;
+          transition: all ease-in-out 0.3s;
+        }
+      }
+
+      &--bottom {
         display: flex;
+        padding: 10px;
         flex-direction: column;
         justify-content: space-between;
+        gap: 20px;
+      }
 
-        &-top{
-
-            p:first-child{
-                color: #66b933;
-                font-size: 2.25rem;
-                font-weight: 700;
-                line-height: 30px;
-            }
-            p:last-child{
-                color: gray;
-                font-size: 1.1rem;
-            }
+      &-name {
+        font-size: 1.2rem;
+        & p{
+          transition: all ease-in-out 0.3s;
         }
+      }
 
-        &-bottom{
+      &-desc {
+        font-size: 0.875rem;
+        min-height: 75px;
+        color: gray;
+        & p{
+            transition: all ease-in-out 0.3s;
+          }
+      }
 
-            p:first-child{
-                color: white;
-                font-size: 1.5rem;
-                font-weight: 700;
-                line-height: 25px;
+      &-priceAdd {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        &-left {
+            & p{
+            transition: all ease-in-out 0.3s;
             }
-            p:last-child{
-                color: gray;
-                font-size: 1.1rem;
-            }
+          }
+
+        &-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          & button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 8px;
+            border-radius: 3px;
+            border: none;
+            background-color: #66b933;
+          }
         }
+      }
     }
+  }
+
+  &__newsSlider{
+    width: 100%;
+    padding: 20px 350px;
+  }
+  &__newsCarousel{
+    width: 100%;
+
+    &--box{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center
+    }
+
+    &--box1{
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/8e31769b8db172029de15fb8e950cd73/new-age-technoloy-campaign-1920x400.jpg);
+    }
+    &--box2{
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/2a46696fd1412d2e7aa5e78460a15653/1920x400.jpg);
+    }
+    &--box3{
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/cc58ab7cef605b2c53a7f5d0c61c2eff/esportsevergreen-catbnr-desktop-400px.jpg);
+    }
+  }
 }
 
 .slick-slide div {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-.slick-prev::before{
-    color: rgb(102, 185, 51) !important;
+.slick-prev::before {
+  color: rgb(102, 185, 51) !important;
 }
-.slick-next::before{
-    color: rgb(102, 185, 51) !important;
+.slick-next::before {
+  color: rgb(102, 185, 51) !important;
 }
-
+.addToCardIco {
+  font-size: 1.3rem;
+}
