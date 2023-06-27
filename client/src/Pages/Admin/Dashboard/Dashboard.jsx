@@ -1,10 +1,15 @@
 import React from 'react'
+import "./Dashboard.scss"
 
 const Dashboard = () => {
   return (
-    <div>
-      Dashboard
-    </div>
+<>
+<section className='dashboard__container'>
+
+
+
+dashboard  
+</section></>
   )
 }
 

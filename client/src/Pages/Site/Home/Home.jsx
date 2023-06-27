@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import { FaChevronRight } from "react-icons/fa";
+import Loader from "../../../Components/Loader/Loader";
 
 const Home = () => {
+const[loading,setLoading]=useState(false)
+useEffect(()=>{
+
+  setLoading(true)
+  window.scrollTo({top:0})
+  setTimeout(()=>{
+    setLoading(false)
+  },1500)
+
+},[])
+
+
   return (
-    <div className="home">
+    <>
+    
+    {
+      loading ?
+      <Loader/>:
+      <section>
+        <div className="home">
       <div className="home__new">
         <div
           className="home__new--item home__new--item1"
@@ -105,7 +124,11 @@ const Home = () => {
           </p>
         </div>
       </div>
-    </div>
+    </div>  
+    </section>  
+    }
+    
+    </>
   );
 };
 

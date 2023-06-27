@@ -1,10 +1,11 @@
 import React from 'react'
-
+import "./Header.scss"
 const Header = () => {
   return (
-    <div>
-      AdminHeader
-    </div>
+      
+<section className='admin__header'>
+AdminHeader
+</section>
   )
 }
 

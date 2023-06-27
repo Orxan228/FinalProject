@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Store.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdOutlineElectricBolt } from "react-icons/md";
+import Loader from "../../../Components/Loader/Loader";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsFillCalendarDayFill } from "react-icons/bs";
 import Slider from "react-slick";
 
 const Store = () => {
+
+  const[loading,setLoading]=useState(false)
+useEffect(()=>{
+
+  setLoading(true)
+  window.scrollTo({top:0})
+  setTimeout(()=>{
+    setLoading(false)
+  },1500)
+
+},[])
+
+
   var settings = {
     dots: false,
     infinite: true,
@@ -102,7 +116,18 @@ const Store = () => {
     ],
   };
   return (
-    <div className="store">
+
+
+
+    <>
+    {
+      loading ?
+      <Loader/>:
+      <section>
+
+
+
+<div className="store">
       <div className="store__filter">
         <Slider className="store__filterCarousel" {...settings}>
           <div className="store__filterCarousel--box store__filterCarousel--box1">
@@ -546,6 +571,20 @@ const Store = () => {
         </div>
       </div>
     </div>
+
+
+
+
+      </section>
+}
+
+</>
+
+
+
+
+
+
   );
 };
 

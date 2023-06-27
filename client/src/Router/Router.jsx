@@ -9,6 +9,10 @@ import Console from "../Pages/Site/Console/Console";
 import Support from "../Pages/Site/Support/Support";
 import Cart from "../Pages/Site/Cart/Cart";
 import Error from "../Pages/Error/Error";
+import Users from "../Pages/Admin/Users/Users";
+import Settings from "../Pages/Admin/Settings/Settings";
+import AllProduct from "../Pages/Admin/AllProduct/AllProduct";
+import NewProduct from "../Pages/Admin/NewProduct/NewProduct";
 
 export const Routes=[{
     path:"/",
@@ -49,7 +53,28 @@ export const Routes=[{
     children:[{
         path: "",
         element: <Dashboard />
-    }]
+    },
+    {
+        path: "user",
+        element: <Users />
+    },
+    {
+        path: "settings",
+        element: <Settings />
+    },
+    {
+        path: "allproduct",
+        element: <AllProduct />
+    },
+    {
+        path: "newproduct",
+        element: <NewProduct />
+    },
+
+
+
+
+]
 },
 {
     path:"*",

@@ -1,9 +1,40 @@
-import React from 'react'
-
+import React, { useEffect, useState } from "react";
+import Loader from "../../../Components/Loader/Loader";
 const Pc = () => {
+  const[loading,setLoading]=useState(false)
+useEffect(()=>{
+
+  setLoading(true)
+  window.scrollTo({top:0})
+  setTimeout(()=>{
+    setLoading(false)
+  },1500)
+
+},[])
   return (
     <>
-      Pc
+    {
+      loading ?
+      <Loader/>:
+      <section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </section>
+}
     </>
   )
 }
