@@ -19,7 +19,7 @@ const Home = () => {
             NEW RAZER BLADE 14
           </p>
           <p className="home__new--item--p home__new--item--p2">
-            SMALL SIZE.BIG PERFOMANCE.
+            SMALL SIZE.BIG PERFORMANCE.
           </p>
         </div>
         <div
@@ -57,28 +57,52 @@ const Home = () => {
       </div>
       <div className="home__grid">
         <div className="home__grid--item home__grid--item1">
-          <p className="home__grid--item--p home__grid--item--p1">CHAMPION HOPE</p>
-          <p className="home__grid--item--p home__grid--item--p2">IN SUPPORT OF BREAST CANCER AWARENESS</p>
+          <p className="home__grid--item--p home__grid--item--p1">
+            CHAMPION HOPE
+          </p>
+          <p className="home__grid--item--p home__grid--item--p2">
+            IN SUPPORT OF BREAST CANCER AWARENESS
+          </p>
         </div>
         <div className="home__grid--item home__grid--item2">
-          <p className="home__grid--item--p home__grid--item--p1">RAZER KITSUNE</p>
-          <p className="home__grid--item--p home__grid--item--p2">OPTICAL + PRECISION! THE ULTRA COMBO!</p>
+          <p className="home__grid--item--p home__grid--item--p1">
+            RAZER KITSUNE
+          </p>
+          <p className="home__grid--item--p home__grid--item--p2">
+            OPTICAL + PRECISION! THE ULTRA COMBO!
+          </p>
         </div>
         <div className="home__grid--item home__grid--item3">
-          <p className="home__grid--item--p home__grid--item--p1">NEW RAZER BLADE 15</p>
-          <p className="home__grid--item--p home__grid--item--p2">PORTABLE. POWERFUL. PERFECTION.</p>
+          <p className="home__grid--item--p home__grid--item--p1">
+            NEW RAZER BLADE 15
+          </p>
+          <p className="home__grid--item--p home__grid--item--p2">
+            PORTABLE. POWERFUL. PERFECTION.
+          </p>
         </div>
         <div className="home__grid--item home__grid--item4">
-          <p className="home__grid--item--p home__grid--item--p1">RAZER ENKI PRO</p>
-          <p className="home__grid--item--p home__grid--item--p2">AUTOMOBILI LAMBORGHINI EDITION</p>
+          <p className="home__grid--item--p home__grid--item--p1">
+            RAZER ENKI PRO
+          </p>
+          <p className="home__grid--item--p home__grid--item--p2">
+            AUTOMOBILI LAMBORGHINI EDITION
+          </p>
         </div>
         <div className="home__grid--item home__grid--item5">
-          <p className="home__grid--item--p home__grid--item--p1">RAZER EDGE</p>
-          <p className="home__grid--item--p home__grid--item--p2">THE ULTIMATE ANDROID GAMING HANDHELD</p>
+          <p className="home__grid--item--p home__grid--item--p1">
+            RAZER EDGE
+          </p>
+          <p className="home__grid--item--p home__grid--item--p2">
+            THE ULTIMATE ANDROID GAMING HANDHELD
+          </p>
         </div>
         <div className="home__grid--item home__grid--item6">
-          <p className="home__grid--item--p home__grid--item--p1">BRING YOUR A‑GAME ANYWHERE</p>
-          <p className="home__grid--item--p home__grid--item--p2">RAZERSTORE REWARDS GIVEAWAY</p>
+          <p className="home__grid--item--p home__grid--item--p1">
+            BRING YOUR A‑GAME ANYWHERE
+          </p>
+          <p className="home__grid--item--p home__grid--item--p2">
+            RAZERSTORE REWARDS GIVEAWAY
+          </p>
         </div>
       </div>
     </div>

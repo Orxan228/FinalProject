@@ -1,3 +1,89 @@
+// .home {
+//   width: 100%;
+
+//   &__new {
+//     &--item {
+//       width: 100%;
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       padding: 90px 200px;
+//       min-height: 600px;
+//       color: white;
+//       border-bottom: 10px solid #343434;
+
+//       &--p {
+//         text-align: center;
+//       }
+
+//       &--p1 {
+//         font-size: 3.5rem;
+//         font-weight: 600;
+//       }
+//       &--p2 {
+//         font-size: 1.75em;
+//       }
+//     }
+//   }
+
+//   &__grid {
+//     width: 100%;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     row-gap: 10px;
+//     column-gap: 10px;
+//     background-color: #343434;
+//     &--item {
+//       padding: 50px;
+//       background-size: 100%;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       color: white;
+//       min-height: 550px;
+//       -webkit-transition: all 0.2s ease-in-out;
+
+//       &--p {
+//         text-align: center;
+//         transition:all 0.2s ease-in-out;
+//       }
+
+//       &--p1 {
+//         font-size: 3rem;
+//         font-weight: 600;
+//       }
+//       &--p2 {
+//         font-size: 1.5em;
+//       }
+
+//       &:hover {
+//         background-size: 120%;
+//       }
+//       &:hover .home__grid--item--p{
+//         color: #66B933;
+//         filter:drop-shadow(rgba(102,185,51,1) 0px 0px 5px);
+//         text-shadow: rgb(0, 0, 0) 3px 3px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+//       }
+//     }
+//     &--item1 {
+//       background-image: url(https://assets2.razerzone.com/images/pnx.assets/6fe109c3b2ac099fa5b247503bca4905/nbcf-june-b-950x580-desktop.jpg);
+//     }
+//     &--item2 {
+//       background-image: url(https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/razer-kitsune-b-950x580-desktop.jpg);
+//     }
+//     &--item3 {
+//       background-image: url(https://assets2.razerzone.com/images/pnx.assets/3474002077a69ea3690d1a798c669b13/razer-blade-15-2023-b-950x580-desktop.jpg);
+//     }
+//     &--item4 {
+//       background-image: url(https://assets2.razerzone.com/images/pnx.assets/84d0946021d11b959bda0545c4d4c234/enkipro-lamborghini-b-950x580-desktop.jpg);
+//     }
+//     &--item5 {
+//       background-image: url(https://assets2.razerzone.com/images/pnx.assets/dec1968e4414aa9dd00718ae5c3f531b/razer-edge-b-950x580-desktop.jpg);
+//     }
+//     &--item6 {
+//       background-image: url(https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/razerstore-reward-june-b-950x580-desktop.jpg);
+//     }
+//   }
+// }
 .home {
   width: 100%;
 
@@ -7,8 +93,8 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      padding: 90px 200px;
-      min-height: 600px;
+      padding: 20vh 5vw;
+      min-height: 300px;
       color: white;
       border-bottom: 10px solid #343434;
 
@@ -17,11 +103,12 @@
       }
 
       &--p1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-weight: 600;
       }
+
       &--p2 {
-        font-size: 1.75em;
+        font-size: 1.25rem;
       }
     }
   }
@@ -30,55 +117,71 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+    gap: 10px;
     background-color: #343434;
+  
     &--item {
-      padding: 50px;
-      background-size: 100%;
+      padding: 5vw;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       color: white;
       min-height: 550px;
-      -webkit-transition: all 0.2s ease-in-out;
-
+      transition: all 0.2s ease-in-out;
+  
       &--p {
         text-align: center;
-        transition:all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
 
       &--p1 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 600;
       }
+
       &--p2 {
-        font-size: 1.5em;
+        font-size: 1rem;
+      }
+
+      &:hover .home__grid--item--p {
+        color: #66b933;
+        filter: drop-shadow(rgba(102, 185, 51, 1) 0px 0px 5px);
+        text-shadow: 3px 3px 0px rgb(0, 0, 0),
+          0.540302px 0.841471px 0px rgb(0, 0, 0),
+          -0.416147px 0.909297px 0px rgb(0, 0, 0),
+          -0.989992px 0.14112px 0px rgb(0, 0, 0),
+          -0.653644px -0.756802px 0px rgb(0, 0, 0),
+          0.283662px -0.958924px 0px rgb(0, 0, 0),
+          0.96017px -0.279415px 0px rgb(0, 0, 0);
       }
 
       &:hover {
-        background-size: 120%;
-      }
-      &:hover .home__grid--item--p{
-        color: #66B933;
-        filter:drop-shadow(rgba(102,185,51,1) 0px 0px 5px);
-        text-shadow: rgb(0, 0, 0) 3px 3px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+        box-shadow: 0px 0px 7px 6px rgba(102, 185, 51, 0.58) inset;
+        -webkit-box-shadow: 0px 0px 7px 6px rgba(102, 185, 51, 0.58) inset;
+        -moz-box-shadow: 0px 0px 7px 6px rgba(102, 185, 51, 0.58) inset;
       }
     }
+
     &--item1 {
       background-image: url(https://assets2.razerzone.com/images/pnx.assets/6fe109c3b2ac099fa5b247503bca4905/nbcf-june-b-950x580-desktop.jpg);
     }
+
     &--item2 {
       background-image: url(https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/razer-kitsune-b-950x580-desktop.jpg);
     }
+
     &--item3 {
       background-image: url(https://assets2.razerzone.com/images/pnx.assets/3474002077a69ea3690d1a798c669b13/razer-blade-15-2023-b-950x580-desktop.jpg);
     }
+
     &--item4 {
       background-image: url(https://assets2.razerzone.com/images/pnx.assets/84d0946021d11b959bda0545c4d4c234/enkipro-lamborghini-b-950x580-desktop.jpg);
     }
+
     &--item5 {
       background-image: url(https://assets2.razerzone.com/images/pnx.assets/dec1968e4414aa9dd00718ae5c3f531b/razer-edge-b-950x580-desktop.jpg);
     }
+
     &--item6 {
       background-image: url(https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/razerstore-reward-june-b-950x580-desktop.jpg);
     }
