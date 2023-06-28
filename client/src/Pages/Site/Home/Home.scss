@@ -31,10 +31,14 @@
   &__grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 10px;
     background-color: #343434;
-  
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+    
     &--item {
       padding: 5vw;
       background-size: cover;
