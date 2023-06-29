@@ -6,7 +6,7 @@
         width: 100%;
         padding: 100px 100px 50px 100px;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (max-width: 1024px) {
             padding: 100px 50px 50px 50px;
         }
 
@@ -61,23 +61,27 @@
 
     &__freshHero {
         width: 100%;
-        padding: 20px 50px;
+        padding: 20px 120px;
         color: white;
         min-height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        @media screen and (min-width: 1440px) {
-            padding: 20px 300px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            padding: 20px 200px;
-        }
-
-        @media screen and (min-width: 1024px) {
+        @media screen and (max-width: 1440px) {
             padding: 20px 100px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            padding: 20px 150px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding: 20px 50px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 20px 70px;
         }
 
 
@@ -87,11 +91,19 @@
                 font-size: 2.25rem;
                 font-weight: 700;
                 line-height: 30px;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 1.2rem;
+                }
             }
 
             p:last-child {
                 color: gray;
                 font-size: 1.1rem;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 0.9rem;
+                }
             }
         }
 
@@ -101,11 +113,19 @@
                 font-size: 1.5rem;
                 font-weight: 700;
                 line-height: 25px;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 1.2rem;
+                }
             }
 
             p:last-child {
                 color: gray;
                 font-size: 1.1rem;
+                
+                @media screen and (max-width: 425px) {
+                    font-size: 0.9rem;
+                }
             }
         }
     }
@@ -224,7 +244,7 @@
     &__newsSlider {
         width: 100%;
         padding: 20px;
-        
+
     }
 
     &__newsCarousel {
@@ -262,7 +282,7 @@
                 font-weight: 600;
             }
         }
-        
+
         &--box1 {
             background-image: url(https://assets2.razerzone.com/images/pnx.assets/8e31769b8db172029de15fb8e950cd73/new-age-technoloy-campaign-1920x400.jpg);
         }
@@ -291,12 +311,20 @@
             color: #66b933;
             font-size: 2.5rem;
             font-weight: 700;
+
+            @media screen and (max-width: 425px) {
+                font-size: 1.2rem;
+            }
         }
 
         & p:last-child {
             color: gray;
             font-size: 1.25rem;
             font-weight: 600;
+
+            @media screen and (max-width: 425px) {
+                font-size: 0.9rem;
+            }
         }
     }
 
@@ -547,7 +575,7 @@
     font-size: 2.5rem;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
 
     .store__newsCarousel--inner {
         padding: 50px 30px;
@@ -562,6 +590,7 @@
             font-size: 0.6rem;
         }
     }
+
     .store__offerCarousel--inner {
         padding: 50px 30px;
         gap: 10px;
@@ -577,13 +606,7 @@
         }
     }
 
-    .store__whyBuy--bottom{
+    .store__whyBuy--bottom {
         justify-content: center;
     }
 }
-
-// @media screen and (max-width: 768px) {
-//     .store__prods__card {
-//         width: 21%;
-//     }
-// }
