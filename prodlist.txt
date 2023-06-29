@@ -1,0 +1,169 @@
+
+
+all item keys:
+{
+	item1:
+	{	
+		name: NEW RAZER BLADE 14
+////////////////desc-banner: SMALL SIZE. BIG PERFORMANCE.
+		desc-card: NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.
+////////////////img-banner: assets2.razerzone.com/images/pnx.assets/6ca16320b8425e0a74bc7ed71f2adf99/razer-blade-14-2023-homepage-desktop2x.jpg
+		img-card:https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png
+		price:2399.99
+		category:pc
+	}
+	item2:
+	{	
+		name: NEW RAZER BLADE 16
+////////////////desc-banner: PERFORMANCE REIMAGINED.
+		desc-card: NVIDIA® GeForce RTX™ 40 Series 16” Laptop with 13th Gen Intel® Core™ i9 Processor (24-Core).
+////////////////img-banner: https://assets2.razerzone.com/images/pnx.assets/a845f6901aeda8def2ad4b2ba0314ecb/mercury-blade16&18-homepage-desktop2x.jpg
+		img-card:https://assets3.razerzone.com/AqlD4yg0b4pooh6UMzHRDRfFoeM=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh03%2Fh9e%2F9524617838622%2Fblade16-s95-mercury-500x500.png
+		price:3799.99
+		category:pc
+	}
+	item3:
+	{	
+		name: NEW RAZER BLADE 18
+////////////////desc-banner: PERFORMANCE REIMAGINED.
+		desc-card: NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.
+////////////////img-banner: https://assets2.razerzone.com/images/pnx.assets/a845f6901aeda8def2ad4b2ba0314ecb/mercury-blade16&18-homepage-desktop2x.jpg
+		img-card:https://assets3.razerzone.com/AqlD4yg0b4pooh6UMzHRDRfFoeM=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh03%2Fh9e%2F9524617838622%2Fblade16-s95-mercury-500x500.png
+		price:3799.99
+		category:pc
+	}
+	item4:
+	{	
+		name: Razer Plushie
+////////////////desc-banner: PERFORMANCE REIMAGINED.
+		desc-card: Collectible Plushie for Razer Fans.
+////////////////img-banner: https://assets2.razerzone.com/images/pnx.assets/a845f6901aeda8def2ad4b2ba0314ecb/mercury-blade16&18-homepage-desktop2x.jpg
+		img-card:https://assets3.razerzone.com/EgGB90Ld6HD4IRl31o0ELbWUOso=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh59%2Fh27%2F9525789589534%2Fths-plushie-500x500.png
+		price:34.99
+		category:mobile
+	}
+	item5:
+	{	
+		name: Razer Moray
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Ergonomic In-ear Monitor for All-day Streaming.
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/rPwKS5S5e2c-df6kyshZUlVOalw=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh69%2Fh38%2F9591445061662%2Fmoray-500x500.png
+		price:129.99
+		category:console
+	}
+	item6:
+	{	
+		name: Razer Nommo V2 Models
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Full-Range 2.1 PC Gaming Speakers with Wired Subwoofer
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/PZQYr024AGmuTEeyxLaIi1r1CwI=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh40%2Fh81%2F9522168987678%2Fnommo-v2-500x500.png
+		price:299.99
+		category:pc
+	}
+	item7:
+	{	
+		name: Razer Wireless Controller & Quick Charging Stand for Xbox Razer Limited Edition
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Officially Licensed Xbox Controller and Quick Charging Stand
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/dc2a8ydrlYbI1Cxql4dqvGcyOtA=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhe8%2Fha6%2F9450109992990%2Funiversal-quick-charging-stand-xbox-v2-500x500.png
+		price:199.99
+		category:console
+	}
+	item8:
+	{	
+		name: Razer DeathStalker V2 Pro Tenkeyless - Clicky Optical Switch - US - Black
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Wireless Low-Profile RGB Tenkeyless Optical Keyboard
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/TuWuCs40JqlaHBxvYFW7ev-Lml0=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh7d%2Fh59%2F9533910089758%2Fdeathstalker-v2-pro-tkl-4-500x500.png
+		price:219.99
+		category:pc
+	}
+	item9:
+	{	
+		name: Razer Naga Left-Handed Edition
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Ergonomic MMO Gaming Mouse for Left-Handed Users
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/PjExqIfYxtEgQg-WMszhQge8Pd0=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh09%2Fhba%2F9529652346910%2Fnaga-left-handed-2-500x500.png
+		price:99.99
+		category:pc
+	}
+	item10:
+	{	
+		name: Razer Enki Pro - Automobili Lamborghini Edition
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Premium Gaming Chair with Alcantara® Leather for All-Day Comfort
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/ZDU4mfPpNnf51UhvcVSt2KliIEg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh4e%2Fh58%2F9456056172574%2Fenki-pro-lamborghini-500x500.png
+		price:1299.99
+		category:pc
+	}
+	item11:
+	{	
+		name: Razer Enki Pro - Koenigsegg Edition
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Premium Gaming Chair with Alcantara® Leather for All-Day Comfort
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https:https://assets3.razerzone.com/R3uCcugMuuPu18L1LxiapmDCLAU=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh4e%2Fh74%2F9424953245726%2Fenki-pro-koenigsegg-500x500.png
+		price:1299.99
+		category:pc
+	}
+	item12:
+	{	
+		name: Razer Kiyo Pro Ultra
+////////////////desc-banner:Ergonomic In-ear Monitor for All-day Streaming.
+		desc-card: Ultra-large Sensor 4K Webcam for Content Creation
+////////////////img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/gr8orw21Pi1EQe4PPA903Ym_JSE=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh04%2Fhee%2F9488900784158%2Fkiyo-pro-ultra-2-500x500.png
+		price:299.99
+		category:pc
+	}
+}
+
+news item keys(laptops):
+{
+	item1:
+	{	
+		name: NEW RAZER BLADE 14
+		desc-banner: SMALL SIZE. BIG PERFORMANCE.
+		desc-card: NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.
+		img-banner: assets2.razerzone.com/images/pnx.assets/6ca16320b8425e0a74bc7ed71f2adf99/razer-blade-14-2023-homepage-desktop2x.jpg
+		img-card:https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png
+		price:2399.99
+		category:console
+	}
+	item2:
+	{	
+		name: NEW RAZER BLADE 16
+		desc-banner: PERFORMANCE REIMAGINED.
+		desc-card: NVIDIA® GeForce RTX™ 40 Series 16” Laptop with 13th Gen Intel® Core™ i9 Processor (24-Core).
+		img-banner: https://assets2.razerzone.com/images/pnx.assets/a845f6901aeda8def2ad4b2ba0314ecb/mercury-blade16&18-homepage-desktop2x.jpg
+		img-card:https://assets3.razerzone.com/AqlD4yg0b4pooh6UMzHRDRfFoeM=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh03%2Fh9e%2F9524617838622%2Fblade16-s95-mercury-500x500.png
+		price:3799.99
+		category:console
+	}
+	item3:
+	{	
+		name: NEW RAZER BLADE 18
+		desc-banner: PERFORMANCE REIMAGINED.
+		desc-card: NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.
+		img-banner: https://assets2.razerzone.com/images/pnx.assets/a845f6901aeda8def2ad4b2ba0314ecb/mercury-blade16&18-homepage-desktop2x.jpg
+		img-card:https://assets3.razerzone.com/AqlD4yg0b4pooh6UMzHRDRfFoeM=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh03%2Fh9e%2F9524617838622%2Fblade16-s95-mercury-500x500.png
+		price:3799.99
+		category:console
+	}
+	item4:
+	{	
+		name: Razer Hammerhead Pro HyperSpeed
+		desc-banner: PERFORMANCE REIMAGINED.
+		desc-card: True Wireless Gaming Earbuds with Razer™ HyperSpeed Wireless, Razer Chroma™ RGB, and Bluetooth 5.3.
+		img-banner: https://assets3.razerzone.com/4AXDpHbicRJcUvXfPj6zCNs5yo8=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh72%2Fhff%2F9525799813150%2F230530-hammerhead-pro-hyperspeed-1500x1000-1.jpg
+		img-card:https://assets3.razerzone.com/KPL4VvBV8F8ZaZAfuBFZlW-Hfeg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh87%2Fhec%2F9525799256094%2Fhammerhead-pro-hyperspeed-500x500.png
+		price:199.99
+		category:console
+	}
+}
