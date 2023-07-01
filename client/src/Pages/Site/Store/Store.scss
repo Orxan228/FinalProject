@@ -179,6 +179,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 10px;
+
             }
 
             &-name {
@@ -230,10 +231,15 @@
                         color: white;
                         border: none;
                         border-radius: 3px;
-                        transition: all ease-in-out 0.3s;
+                        transition: all ease-in-out 0.2s;
+
+                        &:first-child{
+                            margin-right: 10px;
+                        }
 
                         &:hover {
                             background-color: #66b933;
+                            color: black;
                         }
                     }
                 }
@@ -427,6 +433,10 @@
                         border: none;
                         border-radius: 3px;
                         transition: all ease-in-out 0.3s;
+
+                        &:first-child{
+                            margin-right: 10px;
+                        }
 
                         &:hover {
                             background-color: #66b933;

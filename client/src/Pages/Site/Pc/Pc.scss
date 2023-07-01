@@ -131,6 +131,10 @@
                         border-radius: 3px;
                         transition: all ease-in-out 0.3s;
 
+                        &:first-child{
+                            margin-right: 10px;
+                        }
+
                         &:hover {
                             background-color: #66b933;
                         }
@@ -271,6 +275,10 @@
                         border: none;
                         border-radius: 3px;
                         transition: all ease-in-out 0.3s;
+
+                        &:first-child{
+                            margin-right: 10px;
+                        }
 
                         &:hover {
                             background-color: #66b933;

@@ -1,11 +1,11 @@
-.console {
+.mobile {
     width: 100%;
     background-color: #252525;
     padding-top: 50px;
 
     &__hero {
         width: 100%;
-        padding: 50px 0;
+        padding: 100px 0;
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -19,10 +19,18 @@
             font-weight: 200;
             color: #66b933;
             text-align: center;
+
+            @media screen and (max-width: 768px) {
+                font-size: 1.85rem;
+            }
+
+            @media screen and (max-width: 375px) {
+                font-size: 1.6rem;
+            }
         }
 
         & p:last-child {
-            width: 60%;
+            width: 65%;
             font-size: 1.125rem;
             line-height: 1.75rem;
             font-weight: 300;
@@ -30,12 +38,11 @@
             text-align: center;
 
             @media screen and (max-width: 768px) {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
 
-            @media screen and (max-width: 375px) {
-                width: 90%;
-                line-height: 1rem;
+            @media screen and (max-width: 425px) {
+                width: 80%;
             }
         }
     }
@@ -49,7 +56,7 @@
         gap: 10px;
         align-items: center;
         justify-content: flex-start;
-        background-image: url(https://assets2.razerzone.com/images/pnx.assets/4194777b74f8bf80078c6be1a4ea34e7/razer-wolverine-v2-pro-black-white-category-1920x700-desktop.jpg);
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/91baf798ef1e551ef8d4e850c28a0050/razer-edge-1920x700-desktop-cat-banner.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -196,7 +203,7 @@
         }
     }
 
-    &__limited {
+    &__sync {
         width: 100%;
         padding: 50px 0;
         margin-top: 10px;
@@ -206,12 +213,17 @@
         gap: 10px;
         align-items: center;
         justify-content: flex-start;
-        background-image: url(https://assets2.razerzone.com/images/pnx.assets/874bdcaea660e93369e2c9210570a174/razer-xbox-controller-and-charging-stand-1920x700-desktop.jpg);
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/6d5e42cc985b839667f80f80f88e6327/stay-in-sync-1920x700.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
 
+        @media screen and (max-width: 425px) {
+            min-height: 500px;
+        }
+
         & p:first-child {
+            text-align: center;
             font-size: 3rem;
             color: white;
             font-weight: 300;
@@ -222,13 +234,19 @@
                 font-size: 1.75rem;
             }
         }
-
+        
         & p:last-child {
+            width: 60%;
+            text-align: center;
             font-size: 1.3rem;
             color: #999;
             font-weight: 300;
             text-shadow: 0px 0px 3px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
-
+            
+            @media screen and (max-width: 768px) {
+                width: 80%;
+                font-size: 1.2rem;
+            }
 
             @media screen and (max-width: 425px) {
                 font-size: 0.8rem;
@@ -236,7 +254,7 @@
         }
     }
 
-    &__sonic {
+    &__extra {
         width: 100%;
         padding: 50px 0;
         margin-top: 10px;
@@ -246,23 +264,29 @@
         gap: 10px;
         align-items: center;
         justify-content: flex-start;
-        background-image: url(https://assets2.razerzone.com/images/pnx.assets/0e064526124df6127811074622ca706f/sonic-the-hedgehog-xbox-controller-and-charging-stand-1920x700-desktop.jpg);
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/8d15cb8a565e71ef01f047785d22ce69/gothe-extramile-category-1920x700-desktop.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
 
+        @media screen and (max-width: 425px) {
+            min-height: 500px;
+        }
+
         & p:first-child {
+            text-align: center;
             font-size: 3rem;
             color: white;
             font-weight: 300;
-            text-shadow: 0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 1);
-
+            text-shadow: 0px 0px 5px rgb(102, 185, 51), 0px 0px 10px rgb(102, 185, 51);
             @media screen and (max-width: 768px) {
                 font-size: 2rem;
             }
         }
 
         & p:last-child {
+            width: 60%;
+            text-align: center;
             font-size: 1.3rem;
             color: #999;
             font-weight: 300;
@@ -270,37 +294,83 @@
 
 
             @media screen and (max-width: 768px) {
+                width: 80%;
                 font-size: 1.2rem;
+            }
+
+            @media screen and (max-width: 425px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    &__experience {
+        width: 100%;
+        padding: 100px 0;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #111;
+
+        & p:first-child {
+            font-size: 2.25rem;
+            line-height: 2.25rem;
+            font-weight: 200;
+            color: #66b933;
+            text-align: center;
+
+            @media screen and (max-width: 425px) {
+                font-size: 1.85rem;
+            }
+        }
+
+        & p:last-child {
+            width: 60%;
+            font-size: 1.125rem;
+            font-weight: 300;
+            color: gray;
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                width: 80%;
+                font-size: 1.2rem;
+            }
+
+            @media screen and (max-width: 425px) {
+                width: 90%;
+                font-size: 0.85rem;
             }
         }
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .console__new {
+    .mobile__new {
         min-height: 400px;
     }
 
-    .console__limited {
+    .mobile__limited {
         min-height: 400px;
     }
 
-    .console__sonic {
+    .mobile__sonic {
         min-height: 400px;
     }
 
 }
 
 @media only screen and (max-width: 425px) {
-    .console__new {
+    .mobile__new {
         min-height: 300px;
     }
 
-    .console__limited {
+    .mobile__limited {
         min-height: 300px;
     }
 
-    .console__sonic {
+    .mobile__sonic {
         min-height: 300px;
     }
 }
