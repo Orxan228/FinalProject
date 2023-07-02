@@ -8,6 +8,10 @@ const errorMiddleware = require("./middleware/error")
 const product = require("./routes/productRoute")
 app.use("/api/v1", product)
 
+//Route Imports
+const newProduct = require("./routes/newProductRoute")
+app.use("/api/v1", newProduct)
+
 //Middleware for errors
 app.use(errorMiddleware)
 
