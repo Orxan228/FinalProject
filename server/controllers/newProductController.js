@@ -28,6 +28,8 @@ exports.getNewProductDetails = catchAsyncErrors(async (req, res, next) => {
 
 // Get all NewProducts
 exports.getAllNewProducts = catchAsyncErrors(async (req, res) => {
+
+  
   const product = await NewProducts.find();
   res.status(200).json({
     success: true,
