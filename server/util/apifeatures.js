@@ -22,12 +22,18 @@ class ApiFeatures {
     const queryCopy = { ...this.queryStr };
 
     //Remove some fields for category
-
     const removeFileds = ["keyword", "page", "limit"];
-
+    
     removeFileds.forEach((key) => delete queryCopy[key]);
+    
+    //Filter for Price
+    // console.log(queryCopy);
+    let queryStr = JSON.stringify(queryCopy);
+    queryStr = queryStr.replace(/\b(gt|gte|lt|lte)\b/g, (key) => `$${key}`);
 
-    this.query = this.query.find(queryCopy);
+    this.query = this.query.find(JSON.parse(queryStr));
+
+    // console.log(queryStr);
     return this;
   }
 }
