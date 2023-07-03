@@ -19,8 +19,6 @@ const allProductSchema = new mongoose.Schema({
                 type:String,
                 required:true
             }
-            // type:String,
-            // required:[true, "Please Enter Products Card Image Source!"]
         }
     ],
     price:{

@@ -6,7 +6,6 @@ import Store from "../Pages/Site/Store/Store";
 import Pc from "../Pages/Site/Pc/Pc";
 import Mobile from "../Pages/Site/Mobile/Mobile";
 import Console from "../Pages/Site/Console/Console";
-import Support from "../Pages/Site/Support/Support";
 import Cart from "../Pages/Site/Cart/Cart";
 import Error from "../Pages/Error/Error";
 import Users from "../Pages/Admin/Users/Users";
@@ -36,10 +35,6 @@ export const Routes=[{
 {
     path: "mobile",
     element: <Mobile/>
-},
-{
-    path: "Support",
-    element: <Support/>
 },
 {
     path: "cart",

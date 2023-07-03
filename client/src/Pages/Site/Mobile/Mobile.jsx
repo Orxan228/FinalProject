@@ -3,6 +3,19 @@ import Loader from "../../../Components/Loader/Loader";
 import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Mobile.scss";
+import MetaData from "../../../Layout/Site/Header/MetaData";
+import MobileCard from "./MobileCard";
+
+const product ={
+    name:"NEW RAZER BLADE 14",
+    descCard: "NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.",
+    imgCard: "https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png",
+    price:2399.99,
+    category:"pc",
+    _id:"123",
+  }
+
+
 const Mobile = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -19,6 +32,8 @@ const Mobile = () => {
         <Loader />
       ) : (
         <section>
+          <MetaData title="Mobile" />
+
           <div className="mobile">
             <div className="mobile__hero">
               <p>ENGINEERED FOR THE GAME, DESIGNED FOR LIFE</p>
@@ -33,7 +48,12 @@ const Mobile = () => {
               <p>The Ultimate Android Gaming Handheld</p>
             </div>
             <div className="mobile__vitrine">
-              <div className="mobile__vitrine__card">
+              <MobileCard product={product}/>
+              <MobileCard product={product}/>
+              <MobileCard product={product}/>
+              <MobileCard product={product}/>
+              <MobileCard product={product}/>
+              {/* <div className="mobile__vitrine__card">
                 <div className="mobile__vitrine__card--top">
                   <img
                     src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
@@ -164,7 +184,7 @@ const Mobile = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="mobile__sync">
               <p>STAY IN-SYNC WITH YOUR WORLD</p>

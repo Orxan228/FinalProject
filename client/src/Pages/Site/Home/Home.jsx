@@ -2,6 +2,20 @@ import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import { FaChevronRight } from "react-icons/fa";
 import Loader from "../../../Components/Loader/Loader";
+import HomeNewProduct from "./HomeNewProduct";
+import MetaData from "../../../Layout/Site/Header/MetaData";
+
+const product ={
+  name:"NEW RAZER BLADE 14",
+  descCard: "NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.",
+  descBanner:"SMALL SIZE. BIG PERFORMANCE.",
+  imgCard: "https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png",
+  imgBanner: "https://assets2.razerzone.com/images/pnx.assets/6ca16320b8425e0a74bc7ed71f2adf99/razer-blade-14-2023-homepage-desktop2x.jpg",
+  price:2399.99,
+  category:"pc",
+  _id:"123",
+}
+
 
 const Home = () => {
 const[loading,setLoading]=useState(false)
@@ -23,56 +37,13 @@ useEffect(()=>{
       loading ?
       <Loader/>:
       <section>
+        <MetaData title="Razer" />
         <div className="home">
       <div className="home__new">
-        <div
-          className="home__new--item home__new--item1"
-          style={{
-            backgroundImage:
-              "url(" +
-              "https://assets2.razerzone.com/images/pnx.assets/6ca16320b8425e0a74bc7ed71f2adf99/razer-blade-14-2023-homepage-desktop.jpg" +
-              ")",
-          }}
-        >
-          <p className="home__new--item--p home__new--item--p1">
-            NEW RAZER BLADE 14
-          </p>
-          <p className="home__new--item--p home__new--item--p2">
-            SMALL SIZE.BIG PERFORMANCE.
-          </p>
-        </div>
-        <div
-          className="home__new--item home__new--item2"
-          style={{
-            backgroundImage:
-              "url(" +
-              "https://assets2.razerzone.com/images/pnx.assets/a845f6901aeda8def2ad4b2ba0314ecb/mercury-blade16&18-homepage-desktop2x.jpg" +
-              ")",
-          }}
-        >
-          <p className="home__new--item--p home__new--item--p1">
-            NEW RAZER BLADE 16 & 18 MERCURY
-          </p>
-          <p className="home__new--item--p home__new--item--p2">
-            PERFORMANCE REIMAGINED
-          </p>
-        </div>
-        <div
-          className="home__new--item home__new--item3"
-          style={{
-            backgroundImage:
-              "url(" +
-              "https://assets2.razerzone.com/images/pnx.assets/6ca16320b8425e0a74bc7ed71f2adf99/razer-hammerhead-pro-hyperspeed-homepage-desktop1x.jpg" +
-              ")",
-          }}
-        >
-          <p className="home__new--item--p home__new--item--p1">
-            RAZER HAMMERHEAD PRO HYPERSPEED
-          </p>
-          <p className="home__new--item--p home__new--item--p2">
-            PLAY EVERYWHERE. HEAR EVERYTHING.
-          </p>
-        </div>
+        <HomeNewProduct product={product}/>
+        <HomeNewProduct product={product}/>
+        <HomeNewProduct product={product}/>
+        <HomeNewProduct product={product}/>
       </div>
       <div className="home__grid">
         <div className="home__grid--item home__grid--item1">

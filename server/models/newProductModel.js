@@ -9,7 +9,23 @@ const newProductSchema = new mongoose.Schema({
         type:String,
         required:[true, "Please Enter Products Card Description!"]
     },
+    descBanner:{
+        type:String,
+        required:[true, "Please Enter Products Card Description!"]
+    },
     imgCard:[
+        {
+            public_id:{
+                type:String,
+                required:[true, "Please Enter Products Card Image!"]
+            },
+            url:{
+                type:String,
+                required:[true, "Please Enter Products Banner Image!"]
+            }
+        }
+    ],
+    imgBanner:[
         {
             public_id:{
                 type:String,

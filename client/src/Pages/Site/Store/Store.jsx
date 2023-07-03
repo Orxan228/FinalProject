@@ -4,12 +4,34 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdOutlineElectricBolt } from "react-icons/md";
-import { BiSearchAlt } from "react-icons/bi"
+import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
 import { BsFillCalendarDayFill } from "react-icons/bs";
 import Loader from "../../../Components/Loader/Loader";
 import Slider from "react-slick";
+import MetaData from "../../../Layout/Site/Header/MetaData";
+import StoreCard from "./StoreCard";
+import StoreNewCard from "./StoreNewCard";
+
+const newProduct ={
+  name:"NEW RAZER BLADE 14",
+  descCard: "NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.",
+  descBanner:"SMALL SIZE. BIG PERFORMANCE.",
+  imgCard: "https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png",
+  imgBanner: "https://assets2.razerzone.com/images/pnx.assets/6ca16320b8425e0a74bc7ed71f2adf99/razer-blade-14-2023-homepage-desktop2x.jpg",
+  price:2399.99,
+  category:"pc",
+  _id:"123",
+}
+const product ={
+  name:"NEW RAZER BLADE 14",
+  descCard: "NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.",
+  imgCard: "https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png",
+  price:2399.99,
+  category:"pc",
+  _id:"123",
+}
 
 const Store = () => {
   const [loading, setLoading] = useState(false);
@@ -118,6 +140,8 @@ const Store = () => {
         <Loader />
       ) : (
         <section>
+          <MetaData title="Store" />
+
           <div className="store">
             <div className="store__filter">
               <Slider className="store__filterCarousel" {...settings}>
@@ -257,171 +281,11 @@ const Store = () => {
               </div>
             </div>
             <div className="store__fresh">
-              <div className="store__fresh__card">
-                <div className="store__fresh__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__fresh__card--bottom">
-                  <div className="store__fresh__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__fresh__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__fresh__card-priceAdd">
-                    <div className="store__fresh__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__fresh__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__fresh__card">
-                <div className="store__fresh__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__fresh__card--bottom">
-                  <div className="store__fresh__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__fresh__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__fresh__card-priceAdd">
-                    <div className="store__fresh__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__fresh__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__fresh__card">
-                <div className="store__fresh__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__fresh__card--bottom">
-                  <div className="store__fresh__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__fresh__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__fresh__card-priceAdd">
-                    <div className="store__fresh__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__fresh__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__fresh__card">
-                <div className="store__fresh__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__fresh__card--bottom">
-                  <div className="store__fresh__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__fresh__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__fresh__card-priceAdd">
-                    <div className="store__fresh__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__fresh__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__fresh__card">
-                <div className="store__fresh__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__fresh__card--bottom">
-                  <div className="store__fresh__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__fresh__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__fresh__card-priceAdd">
-                    <div className="store__fresh__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__fresh__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <StoreCard product={product}/>
+              <StoreCard product={product}/>
+              <StoreCard product={product}/>
+              <StoreCard product={product}/>
+              <StoreCard product={product}/>
             </div>
 
             <div className="store__newsSlider">
@@ -451,171 +315,11 @@ const Store = () => {
               <p>Razer mice, keyboard, headset, laptops & more</p>
             </div>
             <div className="store__prods">
-              <div className="store__prods__card">
-                <div className="store__prods__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__prods__card--bottom">
-                  <div className="store__prods__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__prods__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__prods__card-priceAdd">
-                    <div className="store__prods__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__prods__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__prods__card">
-                <div className="store__prods__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__prods__card--bottom">
-                  <div className="store__prods__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__prods__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__prods__card-priceAdd">
-                    <div className="store__prods__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__prods__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__prods__card">
-                <div className="store__prods__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__prods__card--bottom">
-                  <div className="store__prods__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__prods__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__prods__card-priceAdd">
-                    <div className="store__prods__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__prods__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__prods__card">
-                <div className="store__prods__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__prods__card--bottom">
-                  <div className="store__prods__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__prods__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__prods__card-priceAdd">
-                    <div className="store__prods__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__prods__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="store__prods__card">
-                <div className="store__prods__card--top">
-                  <img
-                    src="https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png"
-                    alt=""
-                  />
-                </div>
-                <div className="store__prods__card--bottom">
-                  <div className="store__prods__card-name">
-                    <p>Razer Blade 18 Models</p>
-                  </div>
-                  <div className="store__prods__card-desc">
-                    <p>
-                      NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9
-                      7940HS Processor
-                    </p>
-                  </div>
-                  <div className="store__prods__card-priceAdd">
-                    <div className="store__prods__card-priceAdd-left">
-                      <p>From</p>
-                      <p>US$3,799</p>
-                    </div>
-                    <div className="store__prods__card-priceAdd-right">
-                      <button>
-                        <BiSearchAlt className="addToCardIco" />
-                      </button>
-                      <button>
-                        <AiOutlineShoppingCart className="addToCardIco" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <StoreNewCard newProduct={newProduct}/>
+              <StoreNewCard newProduct={newProduct}/>
+              <StoreNewCard newProduct={newProduct}/>
+              <StoreNewCard newProduct={newProduct}/>
+              <StoreNewCard newProduct={newProduct}/>
             </div>
             <div className="store__offerSlider">
               <Slider className="store__offerCarousel" {...settingsNews}>
