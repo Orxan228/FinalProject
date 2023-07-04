@@ -13,6 +13,7 @@ import Slider from "react-slick";
 import MetaData from "../../../Layout/Site/Header/MetaData";
 import StoreCard from "./StoreCard";
 import StoreNewCard from "./StoreNewCard";
+import axios from "axios";
 
 const newProduct ={
   name:"NEW RAZER BLADE 14",
@@ -42,6 +43,30 @@ const Store = () => {
       setLoading(false);
     }, 1500);
   }, []);
+
+  
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:7777/api/v1/product/").then((res) => {
+      console.log(res.data.product )
+      setData(res.data.product);
+    }).catch((error) => {
+            console.error("Error fetching data:", error);
+  });
+ }, []);
+
+ 
+ const [dataNew, setDataNew] = useState([]);
+
+ useEffect(() => {
+   axios.get("http://localhost:7777/api/v1/newProduct/").then((res) => {
+     console.log(res.data.product )
+     setDataNew(res.data.product);
+   }).catch((error) => {
+           console.error("Error fetching data:", error);
+ });
+}, []);
 
   var settings = {
     dots: false,
@@ -281,11 +306,48 @@ const Store = () => {
               </div>
             </div>
             <div className="store__fresh">
-              <StoreCard product={product}/>
-              <StoreCard product={product}/>
-              <StoreCard product={product}/>
-              <StoreCard product={product}/>
-              <StoreCard product={product}/>
+            {dataNew.length > 0 && dataNew.map((item, index) => {
+                {
+                  return (
+                    <div className="store__fresh__card">
+                    <div className="store__fresh__card--top">
+                    {
+                          item.imgCard.map(img=>{
+                            return(
+                              <img src={img.url} alt="" />
+                            )
+                          })
+                        }
+                    </div>
+                    <div className="store__fresh__card--bottom">
+                      <div className="store__fresh__card-name">
+                        <p>{item.name}</p>
+                      </div>
+                      <div className="store__fresh__card-desc">
+                        <p>
+                        {item.descCard}
+                        </p>
+                      </div>
+                      <div className="store__fresh__card-priceAdd">
+                        <div className="store__fresh__card-priceAdd-left">
+                          <p>From</p>
+                          <p>US${item.price}</p>
+                        </div>
+                        <div className="store__fresh__card-priceAdd-right">
+                          <button>
+                            <BiSearchAlt className="addToCardIco" />
+                          </button>
+                          <button>
+                            <AiOutlineShoppingCart className="addToCardIco" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  )
+                }
+                ;
+              })}
             </div>
 
             <div className="store__newsSlider">
