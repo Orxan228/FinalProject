@@ -309,7 +309,7 @@ const Store = () => {
             {dataNew.length > 0 && dataNew.map((item, index) => {
                 {
                   return (
-                    <div className="store__fresh__card">
+                    <div key={index} className="store__fresh__card">
                     <div className="store__fresh__card--top">
                     {
                           item.imgCard.map(img=>{
@@ -377,11 +377,48 @@ const Store = () => {
               <p>Razer mice, keyboard, headset, laptops & more</p>
             </div>
             <div className="store__prods">
-              <StoreNewCard newProduct={newProduct}/>
-              <StoreNewCard newProduct={newProduct}/>
-              <StoreNewCard newProduct={newProduct}/>
-              <StoreNewCard newProduct={newProduct}/>
-              <StoreNewCard newProduct={newProduct}/>
+            {data.length > 0 && data.map((item, index) => {
+                {
+                  return (
+                    <div key={index} className="store__fresh__card">
+                    <div className="store__fresh__card--top">
+                    {
+                          item.imgCard.map(img=>{
+                            return(
+                              <img src={img.url} alt="" />
+                            )
+                          })
+                        }
+                    </div>
+                    <div className="store__fresh__card--bottom">
+                      <div className="store__fresh__card-name">
+                        <p>{item.name}</p>
+                      </div>
+                      <div className="store__fresh__card-desc">
+                        <p>
+                        {item.descCard}
+                        </p>
+                      </div>
+                      <div className="store__fresh__card-priceAdd">
+                        <div className="store__fresh__card-priceAdd-left">
+                          <p>From</p>
+                          <p>US${item.price}</p>
+                        </div>
+                        <div className="store__fresh__card-priceAdd-right">
+                          <button>
+                            <BiSearchAlt className="addToCardIco" />
+                          </button>
+                          <button>
+                            <AiOutlineShoppingCart className="addToCardIco" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  )
+                }
+                ;
+              })}
             </div>
             <div className="store__offerSlider">
               <Slider className="store__offerCarousel" {...settingsNews}>
