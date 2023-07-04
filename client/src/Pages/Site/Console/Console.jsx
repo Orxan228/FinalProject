@@ -5,7 +5,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import Loader from "../../../Components/Loader/Loader";
 import MetaData from "../../../Layout/Site/Header/MetaData";
 import ConsoleCard from "./ConsoleCard";
-
+import axios from "axios";
 const product ={
   name:"NEW RAZER BLADE 14",
   descCard: "NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.",
@@ -24,6 +24,18 @@ const Console = () => {
       setLoading(false);
     }, 1500);
   }, []);
+
+  
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:7777/api/v1/product/").then((res) => {
+      console.log(res.data.product )
+      setData(res.data.product);
+    }).catch((error) => {
+            console.error("Error fetching data:", error);
+  });
+ }, []);
   return (
     <>
       {loading ? (
@@ -49,11 +61,49 @@ const Console = () => {
               <p>Wireless Pro Gaming Controller for PS5™ and PC</p>
             </div>
             <div className="console__vitrine">
-              <ConsoleCard product={product}/>
-              <ConsoleCard product={product}/>
-              <ConsoleCard product={product}/>
-              <ConsoleCard product={product}/>
-              <ConsoleCard product={product}/>
+            {data.map((item, index) => {
+                if(item.category === "console")
+                {
+                  return (
+                    <div key={index} className="console__vitrine__card">
+                    <div className="console__vitrine__card--top">
+                    {
+                          item.imgCard.map(img=>{
+                            return(
+                              <img src={img.url} alt="" />
+                            )
+                          })
+                        } 
+                    </div>
+                    <div className="console__vitrine__card--bottom">
+                      <div className="console__vitrine__card-name">
+                        <p>{item.name}</p>
+                      </div>
+                      <div className="console__vitrine__card-desc">
+                        <p>
+                        {item.descCard}
+                        </p>
+                      </div>
+                      <div className="console__vitrine__card-priceAdd">
+                        <div className="console__vitrine__card-priceAdd-left">
+                          <p>From</p>
+                          <p>US${item.price}</p>
+                        </div>
+                        <div className="console__vitrine__card-priceAdd-right">
+                          <button>
+                            <BiSearchAlt className="addToCardIco" />
+                          </button>
+                          <button>
+                            <AiOutlineShoppingCart className="addToCardIco" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  )
+                }
+                ;
+              })}
             </div>
             <div className="console__limited">
               <p>RAZER LIMITED EDITION</p>

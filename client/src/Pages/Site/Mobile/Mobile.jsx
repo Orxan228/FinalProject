@@ -60,41 +60,45 @@ const Mobile = () => {
             </div>
             <div className="mobile__vitrine">
               {data.map((item, index) => {
-                return (
-                  <div key={index} className="mobile__vitrine__card">
-                    <div className="mobile__vitrine__card--top">
-                    {
-                        item.imgCard.map(img=>{
-                          return(
-                            <img src={img.url} alt="" />
-                          )
-                        })
-                      } 
-                    </div>
-                    <div className="mobile__vitrine__card--bottom">
-                      <div className="mobile__vitrine__card-name">
-                        <p>{item.name}</p>
+                if(item.category === "mobile")
+                {
+                  return (
+                    <div key={index} className="mobile__vitrine__card">
+                      <div className="mobile__vitrine__card--top">
+                      {
+                          item.imgCard.map(img=>{
+                            return(
+                              <img src={img.url} alt="" />
+                            )
+                          })
+                        } 
                       </div>
-                      <div className="mobile__vitrine__card-desc">
-                        <p>{item.descCard}</p>
-                      </div>
-                      <div className="mobile__vitrine__card-priceAdd">
-                        <div className="mobile__vitrine__card-priceAdd-left">
-                          <p>From</p>
-                          <p>US${item.price}</p>
+                      <div className="mobile__vitrine__card--bottom">
+                        <div className="mobile__vitrine__card-name">
+                          <p>{item.name}</p>
                         </div>
-                        <div className="mobile__vitrine__card-priceAdd-right">
-                          <button>
-                            <BiSearchAlt className="addToCardIco" />
-                          </button>
-                          <button>
-                            <AiOutlineShoppingCart className="addToCardIco" />
-                          </button>
+                        <div className="mobile__vitrine__card-desc">
+                          <p>{item.descCard}</p>
+                        </div>
+                        <div className="mobile__vitrine__card-priceAdd">
+                          <div className="mobile__vitrine__card-priceAdd-left">
+                            <p>From</p>
+                            <p>US${item.price}</p>
+                          </div>
+                          <div className="mobile__vitrine__card-priceAdd-right">
+                            <button>
+                              <BiSearchAlt className="addToCardIco" />
+                            </button>
+                            <button>
+                              <AiOutlineShoppingCart className="addToCardIco" />
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
+                  )
+                }
+                ;
               })}
             </div>
             <div className="mobile__sync">

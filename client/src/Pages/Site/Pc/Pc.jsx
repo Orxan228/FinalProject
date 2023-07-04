@@ -5,15 +5,18 @@ import { BiSearchAlt } from "react-icons/bi";
 import Loader from "../../../Components/Loader/Loader";
 import MetaData from "../../../Layout/Site/Header/MetaData";
 import PcCard from "./PcCard";
+import axios from "axios";
 
-const product ={
-  name:"NEW RAZER BLADE 14",
-  descCard: "NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.",
-  imgCard: "https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png",
-  price:2399.99,
-  category:"pc",
-  _id:"123",
-}
+const product = {
+  name: "NEW RAZER BLADE 14",
+  descCard:
+    "NVIDIA® GeForce RTX™ 40 Series 14” Laptop with AMD Ryzen 9 7940HS Processor.",
+  imgCard:
+    "https://assets3.razerzone.com/HWyBrdi1Zay37XldxX3Y1O4puOg=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb7%2Fh1b%2F9539342008350%2Fblade14-p9-black-500x500.png",
+  price: 2399.99,
+  category: "pc",
+  _id: "123",
+};
 
 const Pc = () => {
   const [loading, setLoading] = useState(false);
@@ -25,6 +28,17 @@ const Pc = () => {
       setLoading(false);
     }, 1500);
   }, []);
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:7777/api/v1/product/").then((res) => {
+      console.log(res.data.product )
+      setData(res.data.product);
+    }).catch((error) => {
+            console.error("Error fetching data:", error);
+  });
+ }, []);
 
   return (
     <>
@@ -47,10 +61,48 @@ const Pc = () => {
               </p>
             </div>
             <div className="pc__pcLaptopVitrine">
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
+            {data.length > 0 && data.map((item, index) => {
+                if(item.category === "pc")
+                {
+                  return (
+                    <div key={index} className="pc__pcLaptopVitrine__card">
+                    <div className="pc__pcLaptopVitrine__card--top">
+                    {
+                          item.imgCard.map(img=>{
+                            return(
+                              <img src={img.url} alt="" />
+                            )
+                          })
+                        }
+                    </div>
+                    <div className="pc__pcLaptopVitrine__card--bottom">
+                      <div className="pc__pcLaptopVitrine__card-name">
+                        <p>{item.name}</p>
+                      </div>
+                      <div className="pc__pcLaptopVitrine__card-desc">
+                        <p>{item.descCard}</p>
+                      </div>
+                      <div className="pc__pcLaptopVitrine__card-priceAdd">
+                        <div className="pc__pcLaptopVitrine__card-priceAdd-left">
+                          <p>From</p>
+                          <p>US${item.price}</p>
+                        </div>
+                        <div className="pc__pcLaptopVitrine__card-priceAdd-right">
+                          <button>
+                            <BiSearchAlt className="addToCardIco" />
+                          </button>
+                          <button>
+                            <AiOutlineShoppingCart className="addToCardIco" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  )
+                }
+                ;
+              })}
+
             </div>
             <div className="pc__peripherals ">
               <p>PC & LAPTOP PERIPHERALS</p>
@@ -64,16 +116,47 @@ const Pc = () => {
               </p>
             </div>
             <div className="pc__peripheralsVitrine">
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
-              <PcCard product={product}/>
+            {data.length > 0 && data.map((item, index) => {
+                if(item.category === "peripheral")
+                {
+                  return (
+                    <div key={index} className="pc__pcLaptopVitrine__card">
+                    <div className="pc__pcLaptopVitrine__card--top">
+                    {
+                          item.imgCard.map(img=>{
+                            return(
+                              <img src={img.url} alt="" />
+                            )
+                          })
+                        }
+                    </div>
+                    <div className="pc__pcLaptopVitrine__card--bottom">
+                      <div className="pc__pcLaptopVitrine__card-name">
+                        <p>{item.name}</p>
+                      </div>
+                      <div className="pc__pcLaptopVitrine__card-desc">
+                        <p>{item.descCard}</p>
+                      </div>
+                      <div className="pc__pcLaptopVitrine__card-priceAdd">
+                        <div className="pc__pcLaptopVitrine__card-priceAdd-left">
+                          <p>From</p>
+                          <p>US${item.price}</p>
+                        </div>
+                        <div className="pc__pcLaptopVitrine__card-priceAdd-right">
+                          <button>
+                            <BiSearchAlt className="addToCardIco" />
+                          </button>
+                          <button>
+                            <AiOutlineShoppingCart className="addToCardIco" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  )
+                }
+                ;
+              })}
             </div>
             <div className="pc__complete">
               <p>COMPLETE YOUR SETUP</p>
