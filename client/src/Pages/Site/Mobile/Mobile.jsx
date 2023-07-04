@@ -19,8 +19,8 @@ const Mobile = () => {
 
   useEffect(() => {
     axios.get("http://localhost:7777/api/v1/product/").then((res) => {
-      console.log(res.data);
-      setData(res.data);
+      console.log(res.data.product )
+      setData(res.data.product);
     }).catch((error) => {
             console.error("Error fetching data:", error);
   });
@@ -59,11 +59,17 @@ const Mobile = () => {
               <p>The Ultimate Android Gaming Handheld</p>
             </div>
             <div className="mobile__vitrine">
-              { data.map((item, index) => {
+              {data.map((item, index) => {
                 return (
                   <div key={index} className="mobile__vitrine__card">
                     <div className="mobile__vitrine__card--top">
-                      <img src={item.imgCard} alt="" />
+                    {
+                        item.imgCard.map(img=>{
+                          return(
+                            <img src={img.url} alt="" />
+                          )
+                        })
+                      } 
                     </div>
                     <div className="mobile__vitrine__card--bottom">
                       <div className="mobile__vitrine__card-name">
@@ -75,7 +81,7 @@ const Mobile = () => {
                       <div className="mobile__vitrine__card-priceAdd">
                         <div className="mobile__vitrine__card-priceAdd-left">
                           <p>From</p>
-                          <p>US${item.imgCard}</p>
+                          <p>US${item.price}</p>
                         </div>
                         <div className="mobile__vitrine__card-priceAdd-right">
                           <button>
