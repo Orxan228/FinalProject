@@ -165,10 +165,14 @@
 
             &--top {
                 background-color: #111;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #111;
 
                 & img {
                     object-fit: cover;
-                    width: 100%;
+                    width: 60%;
                     height: 200px;
                     transition: all ease-in-out 0.3s;
                 }
@@ -183,6 +187,10 @@
             }
 
             &-name {
+                width: 290px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden; 
                 font-size: 1.2rem;
 
                 & p {
@@ -191,6 +199,10 @@
             }
 
             &-desc {
+                width: 290px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;  
                 font-size: 0.875rem;
                 min-height: 75px;
                 color: gray;
@@ -368,11 +380,15 @@
             }
 
             &--top {
+                width: 100%;
                 background-color: #111;
-
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #111;
                 & img {
                     object-fit: cover;
-                    width: 100%;
+                    width: 60%;
                     height: 200px;
                     transition: all ease-in-out 0.3s;
                 }
@@ -386,7 +402,12 @@
             }
 
             &-name {
+                width: 290px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden; 
                 font-size: 1.2rem;
+
 
                 & p {
                     transition: all ease-in-out 0.3s;
@@ -394,6 +415,10 @@
             }
 
             &-desc {
+                width: 290px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;  
                 font-size: 0.875rem;
                 min-height: 75px;
                 color: gray;
